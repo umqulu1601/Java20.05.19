@@ -1,0 +1,12 @@
+package acao;
+
+import java.security.Principal;
+
+public class acao {
+	
+	public void adicidonar(int quantidade) {
+		principal.Principal.vetorInformacoes.add(quantidade);
+		
+	}
+
+}

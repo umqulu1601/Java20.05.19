@@ -1,0 +1,20 @@
+package formulariologin;
+
+	public class Formularios {
+		private final UsuarioBean usuarioLogado;
+		public Formularios (UsuarioBean usuario){
+			this.usuarioLogado = usuario;
+		}
+		public void abrirFormCadastro(){
+			//cheque o nível de acesso, ou se o usuário não está logado
+			if (usuarioLogado.getUsuario().getNivelDeAcesso() < 2 || usuarioLogado == null){
+				System.out.println("Acesso negado!");
+				//ao dar return, o código a seguir não será executado
+				return;
+			}
+			abrirFormulario();
+		}
+		public void abrirFormulario(){
+			//lógica do formulário
+		}
+	}

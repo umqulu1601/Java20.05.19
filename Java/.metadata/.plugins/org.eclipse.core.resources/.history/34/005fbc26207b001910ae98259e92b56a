@@ -1,0 +1,9 @@
+package cargos;
+
+public class Analista {
+	
+	//IRRF
+		public void iRRF() {
+			
+		}
+	}

@@ -1,0 +1,9 @@
+package cargos;
+
+public class Estagiario {
+	
+	//IRRF
+		public void iRRF() {
+			
+		}
+	}

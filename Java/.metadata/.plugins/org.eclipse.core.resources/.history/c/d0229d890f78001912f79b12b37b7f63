@@ -1,0 +1,65 @@
+package formulario;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class FormularioPrincipal extends JFrame {
+
+	private JPanel contentPane;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormularioPrincipal frame = new FormularioPrincipal();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public FormularioPrincipal() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 335, 470);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 11, 299, 409);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JButton button = new JButton("Quantidade");
+		button.setBounds(200, 11, 89, 23);
+		panel.add(button);
+		
+		JLabel label = new JLabel("");
+		label.setBounds(226, 45, 48, 14);
+		panel.add(label);
+		
+		JLabel lblArroz = new JLabel("Arroz");
+		lblArroz.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblArroz.setBounds(40, 15, 48, 14);
+		panel.add(lblArroz);
+		
+		JButton btnNewButton = new JButton("+");
+		btnNewButton.setToolTipText("+");
+		btnNewButton.setBounds(10, 40, 48, 23);
+		panel.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("-");
+		btnNewButton_1.setBounds(63, 40, 48, 23);
+		panel.add(btnNewButton_1);
+	}
+}

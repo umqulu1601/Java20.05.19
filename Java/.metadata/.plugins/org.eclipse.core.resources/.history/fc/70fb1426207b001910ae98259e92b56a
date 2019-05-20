@@ -1,0 +1,9 @@
+package cargos;
+
+public class Desenvolvedor {
+	
+	//IRRF
+	public void iRRF() {
+		
+	}
+}

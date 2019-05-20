@@ -1,0 +1,172 @@
+package formulario;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class FormularioPrincipal extends JFrame {
+
+	private JPanel contentPane;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormularioPrincipal frame = new FormularioPrincipal();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public FormularioPrincipal() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 319, 422);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 11, 283, 365);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JButton button = new JButton("Quantidade");
+		button.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		button.setBounds(166, 11, 110, 23);
+		panel.add(button);
+		
+		JLabel label = new JLabel("");
+		label.setBounds(201, 49, 48, 14);
+		panel.add(label);
+		
+		JLabel lblArroz = new JLabel("Arroz");
+		lblArroz.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblArroz.setBounds(47, 15, 41, 14);
+		panel.add(lblArroz);
+		
+		JButton btnarrMaior = new JButton("+");
+		btnarrMaior.setToolTipText("+");
+		btnarrMaior.setBounds(10, 40, 48, 23);
+		panel.add(btnarrMaior);
+		
+		JButton btnarrMenor = new JButton("-");
+		btnarrMenor.setToolTipText("-");
+		btnarrMenor.setBounds(63, 40, 48, 23);
+		panel.add(btnarrMenor);
+		
+		JLabel lblFeijo = new JLabel("Feij\u00E3o");
+		lblFeijo.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblFeijo.setBounds(47, 74, 48, 14);
+		panel.add(lblFeijo);
+		
+		JButton btnfeiMaior = new JButton("+");
+		btnfeiMaior.setToolTipText("+");
+		btnfeiMaior.setBounds(10, 99, 48, 23);
+		panel.add(btnfeiMaior);
+		
+		JButton btnfeiMenor = new JButton("-");
+		btnfeiMenor.setToolTipText("-");
+		btnfeiMenor.setBounds(63, 99, 48, 23);
+		panel.add(btnfeiMenor);
+		
+		JLabel lblFarinha = new JLabel("Farinha");
+		lblFarinha.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblFarinha.setBounds(40, 133, 48, 14);
+		panel.add(lblFarinha);
+		
+		JButton btnfarMaior = new JButton("+");
+		btnfarMaior.setToolTipText("+");
+		btnfarMaior.setBounds(10, 158, 48, 23);
+		panel.add(btnfarMaior);
+		
+		JButton btnfarMenor = new JButton("-");
+		btnfarMenor.setToolTipText("-");
+		btnfarMenor.setBounds(63, 158, 48, 23);
+		panel.add(btnfarMenor);
+		
+		JLabel lblAcar = new JLabel("A\u00E7\u00FAcar");
+		lblAcar.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblAcar.setBounds(40, 192, 48, 14);
+		panel.add(lblAcar);
+		
+		JButton btnacuMaior = new JButton("+");
+		btnacuMaior.setToolTipText("+");
+		btnacuMaior.setBounds(10, 217, 48, 23);
+		panel.add(btnacuMaior);
+		
+		JButton btnacuMenor = new JButton("-");
+		btnacuMenor.setToolTipText("-");
+		btnacuMenor.setBounds(63, 217, 48, 23);
+		panel.add(btnacuMenor);
+		
+		JLabel lblOleo = new JLabel("\u00D3leo");
+		lblOleo.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblOleo.setBounds(47, 250, 34, 14);
+		panel.add(lblOleo);
+		
+		JButton btnoleMaior = new JButton("+");
+		btnoleMaior.setToolTipText("+");
+		btnoleMaior.setBounds(10, 275, 48, 23);
+		panel.add(btnoleMaior);
+		
+		JButton btnoleMenor = new JButton("-");
+		btnoleMenor.setToolTipText("-");
+		btnoleMenor.setBounds(63, 276, 48, 23);
+		panel.add(btnoleMenor);
+		
+		JLabel lblSal = new JLabel("Sal");
+		lblSal.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblSal.setBounds(54, 309, 34, 14);
+		panel.add(lblSal);
+		
+		JButton btnsalMaior = new JButton("+");
+		btnsalMaior.setToolTipText("+");
+		btnsalMaior.setBounds(10, 334, 48, 23);
+		panel.add(btnsalMaior);
+		
+		JButton btnsalMenor = new JButton("-");
+		btnsalMenor.setToolTipText("-");
+		btnsalMenor.setBounds(63, 334, 48, 23);
+		panel.add(btnsalMenor);
+		
+		JLabel lblMilho = new JLabel("Milho");
+		lblMilho.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblMilho.setBounds(201, 133, 41, 14);
+		panel.add(lblMilho);
+		
+		JButton btnmilMaior = new JButton("+");
+		btnmilMaior.setToolTipText("+");
+		btnmilMaior.setBounds(166, 158, 48, 23);
+		panel.add(btnmilMaior);
+		
+		JButton btnmilMenor = new JButton("-");
+		btnmilMenor.setToolTipText("-");
+		btnmilMenor.setBounds(224, 158, 48, 23);
+		panel.add(btnmilMenor);
+		
+		JLabel lblErvilha = new JLabel("Ervilha");
+		lblErvilha.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblErvilha.setBounds(201, 192, 48, 14);
+		panel.add(lblErvilha);
+		
+		JButton btnervMaior = new JButton("+");
+		btnervMaior.setToolTipText("+");
+		btnervMaior.setBounds(166, 217, 48, 23);
+		panel.add(btnervMaior);
+		
+		JButton btnervMenor = new JButton("-");
+		btnervMenor.setToolTipText("-");
+		btnervMenor.setBounds(224, 217, 48, 23);
+		panel.add(btnervMenor);
+	}
+}

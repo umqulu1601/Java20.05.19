@@ -1,0 +1,14 @@
+package formulariologin;
+
+public class BeanFormulario {
+	public class UsuarioBean {
+		private Usuario logado;
+		public void login(Usuario usuario){
+			this.logado = usuario;
+		}
+		public Usuario getUsuario(){
+			return logado;
+		}
+	}
+
+}

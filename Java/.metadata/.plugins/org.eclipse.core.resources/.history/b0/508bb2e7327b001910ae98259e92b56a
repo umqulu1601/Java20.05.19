@@ -1,0 +1,20 @@
+import sun.jvm.hotspot.runtime.StaticBaseConstructor;
+
+public class Principal {
+
+		//Método genético
+		public static <E> void listar(E[] vetor) {
+			for(E elemento : vetor) {
+				System.out.println(elemento+" ");
+			}
+		}
+	
+		//Método principal
+		public static void main (String[] args) {
+			
+		//Vetores
+		String[] nomes= {"Suellen", "Cleiton", "Paloma"};
+		Integer[] idade= {22, 30, 17};
+		Double[] alturas= {1.70, 1.77, 1.64};
+	}
+}

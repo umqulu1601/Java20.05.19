@@ -1,0 +1,43 @@
+package exercício07;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		/*
+		 Crie um algoritmo onde o usuário informa um número e a tabuada desse número é realizada, 
+		 exemplo:
+		Número informado: 3
+		3 X 0 = 0
+		3 X 1 = 3
+		3 X 2 = 6
+		3 X 3 = 9
+		3 X 4 = 12
+		3 X 5 = 15
+		3 X 6 = 18
+		3 X 7 = 21
+		3 X 8 = 24
+		3 X 9 = 27
+		3 X 10 = 30
+		 */
+		
+		int número=Integer.parseInt(JOptionPane.showInputDialog("informe um número"));
+		String tabuada="tabuada do "+número;
+				tabuada+= "\n0x = "+número*0;
+				tabuada+= "\n1x = "+número*1;
+				tabuada+= "\n2x = "+número*2;
+				tabuada+= "\n3x = "+número*3;
+				tabuada+= "\n4x = "+número*4;
+				tabuada+= "\n5x = "+número*5;
+				tabuada+= "\n6x = "+número*6;
+				tabuada+= "\n7x = "+número*7;
+				tabuada+= "\n8x = "+número*8;
+				tabuada+= "\n9x = "+número*9;
+				tabuada+= "\n10x = "+número*10;
+
+				JOptionPane.showMessageDialog(null, tabuada);
+	}
+
+}

@@ -1,0 +1,16 @@
+package principal;
+
+import com.sun.org.apache.xalan.internal.xsltc.dom.CachedNodeListIterator;
+
+import colaborador.Colaborador;
+import colaborador.Pessoa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Pessoa p= new Pessoa("Andressa", "Centro", 27);
+		Colaborador c= new Colaborador("Gerente de Marketing", 5000);
+	}
+
+}
